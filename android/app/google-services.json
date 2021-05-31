@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "387845167852",
+    "project_id": "personalchatapp-5ef78",
+    "storage_bucket": "personalchatapp-5ef78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387845167852:android:c2f61a44ec78d78f98a3c9",
+        "android_client_info": {
+          "package_name": "com.example.bulletapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387845167852-n2pl89ve7qdctj2kartmsdgvvla4ov0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEtlltoVObKv6bkEaTSouKqRw3T8tOcow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387845167852-n2pl89ve7qdctj2kartmsdgvvla4ov0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387845167852:android:68edc88c9b168c3098a3c9",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387845167852-n2pl89ve7qdctj2kartmsdgvvla4ov0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEtlltoVObKv6bkEaTSouKqRw3T8tOcow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387845167852-n2pl89ve7qdctj2kartmsdgvvla4ov0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

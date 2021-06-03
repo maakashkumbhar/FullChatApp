@@ -1,13 +1,16 @@
+import 'package:chatapp/model/getxMessageModel.dart';
 import 'package:chatapp/model/message.dart';
+import 'package:chatapp/service/flutterFire.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class ChatBubble extends StatelessWidget {
-  Model messagedata;
+class ChatBubble extends GetWidget<FlutterFire> {
+  var messagedata;
 
   ChatBubble(this.messagedata);
   @override
   Widget build(BuildContext context) {
-    return messagedata.isme == true
+    return messagedata['user'] == controller.userUID
         ? Container(
             margin: EdgeInsets.all(10),
             height: 50,
@@ -30,7 +33,7 @@ class ChatBubble extends StatelessWidget {
                     child: Center(
                         child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("${messagedata.message}"),
+                      child: Text("${messagedata['Message']}"),
                     )))
               ],
             ),

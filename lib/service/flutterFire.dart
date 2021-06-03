@@ -1,3 +1,6 @@
+
+
+import 'package:chatapp/model/getxMessageModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -7,6 +10,7 @@ class FlutterFire extends GetxController {
   FirebaseAuth _auth = FirebaseAuth.instance;
   Rxn<User> _firebaseUser = Rxn<User>();
   String get user => _firebaseUser.value?.email;
+  String get userUID => _firebaseUser.value.uid;
 
   @override
   void onInit() {
@@ -79,4 +83,10 @@ class FlutterFire extends GetxController {
       Get.snackbar("Something Went Wrong", "${e.message}");
     }
   }
+
+  getUserChats(){
+    return FirebaseFirestore.instance.collection("Messages").get();
+  }
+  
+
 }

@@ -42,29 +42,9 @@ class _ChatScreenState extends State<ChatScreen> {
             return ListView.builder(itemCount: snapshot.data.docs.length,itemBuilder: (context,index){
               DocumentSnapshot snaps = snapshot.data.docs[index];
               return ChatBubble(snaps);
-              // return Column(
-              //   children: [
-              //     Text("${snaps["Message"]}")
-              //   ],
-              //);
             },);
           }),
-              // StreamBuilder(  stream: chats ,builder:(context,snapshot){
-              //   return snapshot.hasData ? ListView.builder(itemCount: snapshot.data.docs.length ,itemBuilder: (context,index){
-              //     var data = snapshot.data[index];
-              //     return ChatBubble(data);
-              //   }) :Center(child: CircularProgressIndicator());
-              // }),
-          // GetX<FlutterFire>(
-          //     init: Get.put<FlutterFire>(FlutterFire()),
-          //     builder: (FlutterFire fireController) {
-          //       if (fireController != null &&
-          //           fireController.listMessages != null) {
-          //         return Expanded(
-          //           child: ListView.builder(itemCount: fireController.listMessages.length,),
-          //         );
-          //       }
-          //     }),
+
           Align(
             alignment: Alignment.bottomLeft,
             child: Container(

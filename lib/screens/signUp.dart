@@ -63,7 +63,10 @@ class SignUp extends GetWidget<FlutterFire> {
               onPressed: () {
                 var result = controller.signUp(_emailEdittingController.text,
                     _passwordEdittingController.text);
-                Get.to(Login());
+                if(result ==true)
+                  {
+                    Get.to(Login());
+                  }
               },
               child: Row(
                 children: [

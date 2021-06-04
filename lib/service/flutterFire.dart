@@ -87,6 +87,7 @@ class FlutterFire extends GetxController {
   getUserChats(){
     return FirebaseFirestore.instance.collection("Messages").get();
   }
-  
+
+
 
 }

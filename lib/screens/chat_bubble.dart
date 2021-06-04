@@ -31,10 +31,7 @@ class ChatBubble extends GetWidget<FlutterFire> {
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.blue.withOpacity(0.45)),
                     child: Center(
-                        child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text("${messagedata['Message']}"),
-                    )))
+                        child: Text("${messagedata['Message']}")))
               ],
             ),
           )
@@ -51,17 +48,19 @@ class ChatBubble extends GetWidget<FlutterFire> {
                 SizedBox(
                   width: 10,
                 ),
-                Container(
-                    margin: EdgeInsets.all(5),
-                    height: 30,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey.withOpacity(0.45)),
-                    child: Center(
-                        child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text("${messagedata['Message']}"),
-                    )))
+                Expanded(
+                  child: Container(
+                      margin: EdgeInsets.all(5),
+                      height: 30,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.grey.withOpacity(0.45)),
+                      child: Center(
+                          child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("${messagedata['Message']}"),
+                      ))),
+                )
               ],
             ),
           );

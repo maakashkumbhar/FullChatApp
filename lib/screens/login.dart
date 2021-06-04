@@ -62,9 +62,11 @@ class Login extends GetWidget<FlutterFire> {
                 borderRadius: BorderRadius.circular(20), color: Colors.black),
             child: MaterialButton(
               onPressed: () {
-                controller.signIn(
+                var res = controller.signIn(
                     _emailEddittingCont.text, _passwordEddittingCont.text);
-                Get.to(Home());
+                if(res == true) {
+                  Get.to(Home());
+                }
               },
               child: Row(
                 children: [
